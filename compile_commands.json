@@ -1,0 +1,211 @@
+[
+    {
+        "directory": "Firmware/MDK-ARM",
+        "file": "Firmware/MDK-ARM/startup_stm32f103xb.s",
+        "arguments": [
+            "C:/Users/23642/AppData/Local/Keil_v5/ARM/ARMCLANG/bin/armclang.exe",
+            "-c",
+            "Firmware/MDK-ARM/startup_stm32f103xb.s",
+            "-o",
+            "build/Firmware/Firmware/MDK-ARM/startup_stm32f103xb.o"
+        ]
+    },
+    {
+        "directory": "Firmware/Core/Src",
+        "file": "Firmware/Core/Src/main.c",
+        "arguments": [
+            "C:/Users/23642/AppData/Local/Keil_v5/ARM/ARMCLANG/bin/armclang.exe",
+            "-c",
+            "Firmware/Core/Src/main.c",
+            "-o",
+            "build/Firmware/Firmware/Core/Src/main.o"
+        ]
+    },
+    {
+        "directory": "Firmware/Core/Src",
+        "file": "Firmware/Core/Src/gpio.c",
+        "arguments": [
+            "C:/Users/23642/AppData/Local/Keil_v5/ARM/ARMCLANG/bin/armclang.exe",
+            "-c",
+            "Firmware/Core/Src/gpio.c",
+            "-o",
+            "build/Firmware/Firmware/Core/Src/gpio.o"
+        ]
+    },
+    {
+        "directory": "Firmware/Core/Src",
+        "file": "Firmware/Core/Src/usart.c",
+        "arguments": [
+            "C:/Users/23642/AppData/Local/Keil_v5/ARM/ARMCLANG/bin/armclang.exe",
+            "-c",
+            "Firmware/Core/Src/usart.c",
+            "-o",
+            "build/Firmware/Firmware/Core/Src/usart.o"
+        ]
+    },
+    {
+        "directory": "Firmware/Core/Src",
+        "file": "Firmware/Core/Src/stm32f1xx_it.c",
+        "arguments": [
+            "C:/Users/23642/AppData/Local/Keil_v5/ARM/ARMCLANG/bin/armclang.exe",
+            "-c",
+            "Firmware/Core/Src/stm32f1xx_it.c",
+            "-o",
+            "build/Firmware/Firmware/Core/Src/stm32f1xx_it.o"
+        ]
+    },
+    {
+        "directory": "Firmware/Core/Src",
+        "file": "Firmware/Core/Src/stm32f1xx_hal_msp.c",
+        "arguments": [
+            "C:/Users/23642/AppData/Local/Keil_v5/ARM/ARMCLANG/bin/armclang.exe",
+            "-c",
+            "Firmware/Core/Src/stm32f1xx_hal_msp.c",
+            "-o",
+            "build/Firmware/Firmware/Core/Src/stm32f1xx_hal_msp.o"
+        ]
+    },
+    {
+        "directory": "Firmware/Drivers/STM32F1xx_HAL_Driver/Src",
+        "file": "Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c",
+        "arguments": [
+            "C:/Users/23642/AppData/Local/Keil_v5/ARM/ARMCLANG/bin/armclang.exe",
+            "-c",
+            "Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c",
+            "-o",
+            "build/Firmware/Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o"
+        ]
+    },
+    {
+        "directory": "Firmware/Drivers/STM32F1xx_HAL_Driver/Src",
+        "file": "Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c",
+        "arguments": [
+            "C:/Users/23642/AppData/Local/Keil_v5/ARM/ARMCLANG/bin/armclang.exe",
+            "-c",
+            "Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c",
+            "-o",
+            "build/Firmware/Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o"
+        ]
+    },
+    {
+        "directory": "Firmware/Drivers/STM32F1xx_HAL_Driver/Src",
+        "file": "Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c",
+        "arguments": [
+            "C:/Users/23642/AppData/Local/Keil_v5/ARM/ARMCLANG/bin/armclang.exe",
+            "-c",
+            "Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c",
+            "-o",
+            "build/Firmware/Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o"
+        ]
+    },
+    {
+        "directory": "Firmware/Drivers/STM32F1xx_HAL_Driver/Src",
+        "file": "Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c",
+        "arguments": [
+            "C:/Users/23642/AppData/Local/Keil_v5/ARM/ARMCLANG/bin/armclang.exe",
+            "-c",
+            "Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c",
+            "-o",
+            "build/Firmware/Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o"
+        ]
+    },
+    {
+        "directory": "Firmware/Drivers/STM32F1xx_HAL_Driver/Src",
+        "file": "Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c",
+        "arguments": [
+            "C:/Users/23642/AppData/Local/Keil_v5/ARM/ARMCLANG/bin/armclang.exe",
+            "-c",
+            "Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c",
+            "-o",
+            "build/Firmware/Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o"
+        ]
+    },
+    {
+        "directory": "Firmware/Drivers/STM32F1xx_HAL_Driver/Src",
+        "file": "Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c",
+        "arguments": [
+            "C:/Users/23642/AppData/Local/Keil_v5/ARM/ARMCLANG/bin/armclang.exe",
+            "-c",
+            "Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c",
+            "-o",
+            "build/Firmware/Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o"
+        ]
+    },
+    {
+        "directory": "Firmware/Drivers/STM32F1xx_HAL_Driver/Src",
+        "file": "Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c",
+        "arguments": [
+            "C:/Users/23642/AppData/Local/Keil_v5/ARM/ARMCLANG/bin/armclang.exe",
+            "-c",
+            "Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c",
+            "-o",
+            "build/Firmware/Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o"
+        ]
+    },
+    {
+        "directory": "Firmware/Drivers/STM32F1xx_HAL_Driver/Src",
+        "file": "Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c",
+        "arguments": [
+            "C:/Users/23642/AppData/Local/Keil_v5/ARM/ARMCLANG/bin/armclang.exe",
+            "-c",
+            "Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c",
+            "-o",
+            "build/Firmware/Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o"
+        ]
+    },
+    {
+        "directory": "Firmware/Drivers/STM32F1xx_HAL_Driver/Src",
+        "file": "Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c",
+        "arguments": [
+            "C:/Users/23642/AppData/Local/Keil_v5/ARM/ARMCLANG/bin/armclang.exe",
+            "-c",
+            "Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c",
+            "-o",
+            "build/Firmware/Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o"
+        ]
+    },
+    {
+        "directory": "Firmware/Drivers/STM32F1xx_HAL_Driver/Src",
+        "file": "Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c",
+        "arguments": [
+            "C:/Users/23642/AppData/Local/Keil_v5/ARM/ARMCLANG/bin/armclang.exe",
+            "-c",
+            "Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c",
+            "-o",
+            "build/Firmware/Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o"
+        ]
+    },
+    {
+        "directory": "Firmware/Drivers/STM32F1xx_HAL_Driver/Src",
+        "file": "Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c",
+        "arguments": [
+            "C:/Users/23642/AppData/Local/Keil_v5/ARM/ARMCLANG/bin/armclang.exe",
+            "-c",
+            "Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c",
+            "-o",
+            "build/Firmware/Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o"
+        ]
+    },
+    {
+        "directory": "Firmware/Drivers/STM32F1xx_HAL_Driver/Src",
+        "file": "Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c",
+        "arguments": [
+            "C:/Users/23642/AppData/Local/Keil_v5/ARM/ARMCLANG/bin/armclang.exe",
+            "-c",
+            "Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c",
+            "-o",
+            "build/Firmware/Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.o"
+        ]
+    },
+    {
+        "directory": "Firmware/Core/Src",
+        "file": "Firmware/Core/Src/system_stm32f1xx.c",
+        "arguments": [
+            "C:/Users/23642/AppData/Local/Keil_v5/ARM/ARMCLANG/bin/armclang.exe",
+            "-c",
+            "Firmware/Core/Src/system_stm32f1xx.c",
+            "-o",
+            "build/Firmware/Firmware/Core/Src/system_stm32f1xx.o"
+        ]
+    }
+]
