@@ -1,5 +1,8 @@
 .DS_Store
-Firmware/
-!Firmware/Core/
-!Firmware/Core/**/*
+Firmware/.vscode/
+Firmware/Drivers/
+Firmware/MDK-ARM/
+Firmware/.clangd
+Firmware/.mxproject
+compile_commands.json
 __pycache__/
