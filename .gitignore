@@ -1,4 +1,5 @@
 .DS_Store
 Firmware/
 !Firmware/Core/
+!Firmware/Core/**/*
 __pycache__/
