@@ -2,10 +2,12 @@ import pygame
 import fantas
 from fantas import uimanager as u
 from Display.style import *
+import Display.index as index
 
 class MainRoot(fantas.Root):
     BG = FAKEWHITE
-    WIDTH_SPLIT = 640
+    WIDTH_SPLIT = 640    # 切换显示模式的宽度分界线
+    INDEX_NORMAL_WIDTH = 320    # 正常模式下的索引页宽度
 
     def __init__(self):
         super().__init__(MainRoot.BG)
@@ -15,7 +17,8 @@ class MainRoot(fantas.Root):
         self.icon_pos_kf = fantas.RectKeyFrame(self.icon, 'center', (40, 40), 30, fantas.radius_curve)
         self.icon_size_kf = fantas.UiKeyFrame(self.icon, 'size', (64, 64), 30, fantas.radius_curve)
         self.state = None
-        self.
+        self.index_page = index.IndexPage((0, 0), topleft=(0, 0))
+        self.index_page.anchor = 'topleft'
 
     def init(self):
         t1 = fantas.Trigger()
@@ -51,8 +54,10 @@ class MainRoot(fantas.Root):
         else:
             if u.WIDTH < 640:
                 self.state = "small"
-
+                self.index_page.set_size((u.WIDTH, u.HEIGHT))
             else:
                 self.state = "normal"
+                self.index_page.set_size((MainRoot.INDEX_NORMAL_WIDTH, u.HEIGHT))
+            self.index_page.join_to(self, 0)
 
 root = MainRoot()
