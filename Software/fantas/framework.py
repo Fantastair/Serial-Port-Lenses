@@ -57,10 +57,11 @@ class UiManager:
             else:
                 r = info.current_h*0.8 / size[1]
         self.r = r
-        self.WIDTH, self.HEIGHT = self.size = (size[0]*r, size[1]*r)
+        self.size = (size[0]*r, size[1]*r)
         if flags is None:
             flags = pygame.HWSURFACE | pygame.SRCALPHA
         self.screen = pygame.display.set_mode(self.size, flags=flags, vsync=1)
+        self.WIDTH, self.HEIGHT = self.size = self.screen.get_size()
 
     def allow_events(self, events):
         # 设置只开放的事件
@@ -72,6 +73,7 @@ class UiManager:
         while True:
             self.clock.tick(self.fps)
             for event in pygame.event.get():
+                # print(event)
                 if event.type == pygame.QUIT:
                     quit()
                     return

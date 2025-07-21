@@ -20,6 +20,14 @@ parabola1 = FormulaCurve('4*x-4*x**2')
 rebound_curve = FormulaCurve('-2*x**2+3*x')
 # 尺寸回转线
 cos_curve = FormulaCurve('math.cos(math.pi*x*3)/2+0.5')
+# 圆弧曲线
+radius_curve = SuperCurve(
+    curves=(
+        FormulaCurve('0.5-math.sqrt(0.25-x**2)'),
+        FormulaCurve('math.sqrt(0.25-(x-1)**2)+0.5'),
+    ),
+    splits=(0.5,)
+)
 
 from .basicui import *
 from .basicwidget import *

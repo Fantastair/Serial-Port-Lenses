@@ -45,7 +45,9 @@ load_method = {
 }
 def load_resource(path):
 	# 从文件加载单个资源
-	return load_method[path.suffix](path)
+	method = load_method.get(path.suffix)
+	if method:
+		return method(path)
 
 def load_bytes_resource(suffix, data: bytes):
 	# 从二进制数据加载单个资源
