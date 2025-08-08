@@ -1,8 +1,12 @@
 .DS_Store
-Firmware/.vscode/
+.vscode/
 Firmware/Drivers/
 Firmware/MDK-ARM/
 Firmware/.clangd
 Firmware/.mxproject
 compile_commands.json
 __pycache__/
+SPL Lite.psd
+SPL Lite.drawio
+.$SPL Lite.drawio.bkp
+.clangd
