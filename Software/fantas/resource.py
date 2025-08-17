@@ -13,14 +13,26 @@ __all__ = ['load', 'dump', 'load_resource', 'load_bytes_resource', 'load_res_gro
 
 
 def load(file):
-	# 从二进制文件加载 python 对象（解密）
+	"""
+	从二进制文件加载 python 对象
+
+	只能加载通过 fantas.dump 存储的文件
+
+	Args:
+		file(str/Path): 要加载的文件路径，可以是字符串，也可以是 Path 对象
+	"""
 	if not isinstance(file, Path):
 		file = Path(file)
 	with file.open('rb') as f:
 		return pickle.loads(f.read()[-2:0:-1])
 
 def dump(data, file):
-	# 将 python 对象存储为二进制文件（加密）
+	"""
+	将 python 对象存储为二进制文件
+	Args:
+		data(object): 要存储的 python 对象
+		file(str/Path): 要保存的文件路径，可以是字符串，也可以是 Path 对象
+	"""
 	if not isinstance(file, Path):
 		file = Path(file)
 	with file.open('wb') as f:

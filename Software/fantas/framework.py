@@ -1,4 +1,4 @@
-import os
+import os as _os
 import pickle
 import pygame
 import pygame.freetype
@@ -6,7 +6,7 @@ from pathlib import Path
 
 import fantas
 
-os.environ['SDL_IME_SHOW_UI'] = '1'
+_os.environ['SDL_IME_SHOW_UI'] = '1'
 
 class UiManager:
     # 图形管理类，用于实现主循环
@@ -47,20 +47,13 @@ class UiManager:
         }
         self.cursor_stack = [pygame.SYSTEM_CURSOR_ARROW]
 
-    def init(self, size, r=None, flags=None):
+    def init(self, size, flags=None):
         # 初始化（创建窗口等）
         self.clock = pygame.time.Clock()
-        if r is None:
-            info = pygame.display.Info()
-            if info.current_w/info.current_h < size[0]/size[1]:
-                r = info.current_w*0.8 / size[0]
-            else:
-                r = info.current_h*0.8 / size[1]
-        self.r = r
-        self.size = (size[0]*r, size[1]*r)
+        self.size = size
         if flags is None:
             flags = pygame.HWSURFACE | pygame.SRCALPHA
-        self.screen = pygame.display.set_mode(self.size, flags=flags, vsync=1)
+        self.screen = pygame.display.set_mode(self.size, flags=flags)
         self.WIDTH, self.HEIGHT = self.size = self.screen.get_size()
 
     def allow_events(self, events):
@@ -431,3 +424,25 @@ class UiGroup(Ui):
             ui.render()
             ui.rect.left -= self.rect.left
             ui.rect.top -= self.rect.top
+
+def maximize_window():
+    """
+    最大化窗口
+    """
+    if fantas.PLATFORM == "Windows":
+        import ctypes
+        hwnd = pygame.display.get_wm_info()['window']
+        SW_MAXIMIZE = 3
+        ctypes.windll.user32.ShowWindow(hwnd, SW_MAXIMIZE)
+    elif fantas.PLATFORM == "Darwin":
+        from subprocess import Popen, PIPE
+        script = '''
+        tell application "System Events"
+            tell first process whose unix id is {}
+                set frontmost to true
+                click (first button whose subrole is "AXZoomButton") of window 1
+            end tell
+        end tell
+        '''.format(_os.getpid())
+        Popen(['osascript', '-'], stdin=PIPE).communicate(script.encode())
+    uimanager.size = uimanager.WIDTH, uimanager.HEIGHT = pygame.display.get_window_size()
