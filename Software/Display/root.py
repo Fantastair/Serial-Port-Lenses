@@ -27,7 +27,7 @@ class MainRoot(fantas.Root):
         t2.bind_endupwith(self.icon_pos_kf.launch, 'continue')
         t1.launch(30)
         t2.launch(30)
-        if u.WIDTH < u.settings['window_minsize'][0] or u.HEIGHT < u.settings['window_minsize'][1]:
+        if u.WIDTH < u.settings['window.minsize'][0] or u.HEIGHT < u.settings['window.minsize'][1]:
             self.state = "too small"
             self.icon_size_kf.curve = self.icon_pos_kf.curve = fantas.harmonic_curve
             self.icon_size_kf.totalframe = self.icon_pos_kf.totalframe = 15
